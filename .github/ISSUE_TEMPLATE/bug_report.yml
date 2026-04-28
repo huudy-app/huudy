@@ -1,0 +1,75 @@
+name: Bug Report
+description: Something isn't working correctly
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Please fill out the sections below.
+
+  - type: input
+    id: version
+    attributes:
+      label: Huudy Version
+      description: Found in the title bar or About section
+      placeholder: "e.g. 1.2.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: game
+    attributes:
+      label: Game
+      options:
+        - Manor Lords
+        - Minecraft
+        - Other / Not game-specific
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Windows Version
+      placeholder: "e.g. Windows 11 22H2"
+    validations:
+      required: true
+
+  - type: input
+    id: resolution
+    attributes:
+      label: Resolution & GUI Scale
+      description: In-game resolution and GUI/UI scale setting
+      placeholder: "e.g. 1920×1080, GUI scale 2"
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug clearly
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Launch Huudy
+        2. Select Minecraft
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot or screen recording
+      description: A screenshot of the Huudy overlay and/or the game at the time of the bug is very helpful

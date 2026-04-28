@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discord (fastest response)
+    url: https://huudy.app/discord
+    about: Chat with the community and get quick help
+  - name: Setup Guide
+    url: https://huudy.app/setup
+    about: Step-by-step setup documentation

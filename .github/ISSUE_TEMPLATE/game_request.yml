@@ -1,0 +1,25 @@
+name: Game Request
+description: Request support for a new game
+labels: ["game-request"]
+body:
+  - type: input
+    id: game
+    attributes:
+      label: Game name
+      placeholder: "e.g. Stardew Valley"
+    validations:
+      required: true
+
+  - type: textarea
+    id: hud
+    attributes:
+      label: What HUD elements would be useful?
+      description: Health bar, resources, inventory, score — be specific about what's on screen
+    validations:
+      required: true
+
+  - type: input
+    id: platform
+    attributes:
+      label: Where can I find the game?
+      placeholder: "Steam, Epic, etc."
